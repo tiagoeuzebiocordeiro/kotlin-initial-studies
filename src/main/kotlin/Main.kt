@@ -80,7 +80,27 @@ fun main(args: Array<String>) {
 
     println("Soma, $a + $b = ${sum(a,b)}")
 
-    //Entrada de dados
+    var valor = 1
 
+    // estrutura when
 
+    when (valor) {
+
+        1 -> println("Suco de Milho")
+        2 -> println("Suco de Laranja")
+        3 -> println("Suco de Maracuja")
+        else -> println("Nothing")
+
+    }
+
+   // atribuindo a estrutura a uma variavel
+
+    var mensagem = when (valor) {
+        1 -> ("bom dia")
+        2 -> ("boa tarde")
+        3 -> ("boa noite")
+        else ->("falar nada")
+    }
+
+    println(mensagem) // print valor da mensagem
 }
